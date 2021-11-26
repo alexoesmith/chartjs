@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chart JS</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="./assets/logo.svg">
+    </div>
+    <nav>
+      <svg xmlns="http://www.w3.org/2000/svg" class="menu-icon" viewBox="0 0 20 20" fill="black">
+        <path fill-rule="evenodd"
+          d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+          clip-rule="evenodd" />
+      </svg>
+    </nav>
+  </header>
+
+  <section>
+    <div class="container chart-wrapper">
+      <main>
+        <div class="chart-options">
+          <div class="chart-options__item">
+            <label for="option-1">BF 2042</label>
+            <input type="checkbox" class="checkbox" id="option-1" data-genre="FPS">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-2">Skyrim</label>
+            <input type="checkbox" class="checkbox" id="option-2" data-genre="RPG">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-3">COD</label>
+            <input type="checkbox" class="checkbox" id="option-3" data-genre="FPS">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-4">Witcher: 3</label>
+            <input type="checkbox" class="checkbox" id="option-4" data-genre="RPG">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-5">Gran Turismo</label>
+            <input type="checkbox" class="checkbox" id="option-5" data-genre="Driving">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-6">GTA</label>
+            <input type="checkbox" class="checkbox" id="option-6" data-genre="Action">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-7">Last of Us</label>
+            <input type="checkbox" class="checkbox" id="option-7" data-genre="Horror">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-8">Farming Simulator</label>
+            <input type="checkbox" class="checkbox" id="option-8" data-genre="Sim">
+          </div>
+          <div class="chart-options__item">
+            <label for="option-9">Resident Evil</label>
+            <input type="checkbox" class="checkbox" id="option-9" data-genre="Horror">
+          </div>
+        </div>
+      </main>
+      <aside>
+        <div class="chart-display">
+          <canvas id="myChart" width="400" height="400"></canvas>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+</body>
+
+</html>
