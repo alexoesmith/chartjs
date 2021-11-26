@@ -8,6 +8,7 @@ module.exports = {
   mode: "development",
   entry: {
     main: "./src/js/index.js",
+    chart: "./src/js/chart.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -82,10 +83,10 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      chunks: ["main", "chart"],
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].min.css",
     }),
   ],
-  watch: true,
 };
