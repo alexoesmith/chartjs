@@ -1,5 +1,7 @@
 import "../scss/index.scss";
 import "../assets/logo.svg";
+import "./barChart";
+import "./menu";
 
 import { scores, myChart, genres } from "./barChart";
 

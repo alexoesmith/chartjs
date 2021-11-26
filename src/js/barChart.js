@@ -27,4 +27,4 @@ const myChart = new Chart(ctx, {
   },
 });
 
-export { scores, myChart, genres };
+export { scores, genres, myChart };

@@ -3,10 +3,10 @@
 @use "./utils/variables" as var;
 
 .chart-wrapper {
-  padding: 60px 0;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 80px;
 
   .chart-options {
     display: grid;
@@ -44,14 +44,14 @@
 
         &:after {
           content: "•";
-          font-size: 1rem;
+          font-size: 1.1em;
           display: flex;
           align-items: center;
           justify-content: center;
           position: absolute;
           top: -10px;
           right: -10px;
-          background: var.$green-highlight;
+          background: var.$secondary;
           color: white;
           width: 20px;
           height: 20px;

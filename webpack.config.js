@@ -5,10 +5,9 @@ const HtmlWebpackPlugin = require("html-webpack-plugin");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 
 module.exports = {
-  mode: "production",
+  mode: "development",
   entry: {
     main: "./src/js/index.js",
-    chart: "./src/js/barChart.js",
   },
   output: {
     path: path.resolve(__dirname, "dist"),
@@ -72,7 +71,7 @@ module.exports = {
         test: /\.m?js$/,
         exclude: /(node_modules|bower_components)/,
         use: {
-          loader: "babel-loader",
+          loader: "babel-loader?cacheDirectory",
           options: {
             presets: ["@babel/preset-env"],
           },
@@ -83,7 +82,6 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
-      chunks: ["chart", "main"],
     }),
     new MiniCssExtractPlugin({
       filename: "css/[name].min.css",
